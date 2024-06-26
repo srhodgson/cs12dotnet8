@@ -5,6 +5,8 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vocabulary", "Vocabulary\Vocabulary.csproj", "{823AF964-F542-486A-8F14-9D05C567B972}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Numbers", "Numbers\Numbers.csproj", "{E24FF37E-656C-4B7C-A16F-3C43499EB1E2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{823AF964-F542-486A-8F14-9D05C567B972}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{823AF964-F542-486A-8F14-9D05C567B972}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{823AF964-F542-486A-8F14-9D05C567B972}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E24FF37E-656C-4B7C-A16F-3C43499EB1E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E24FF37E-656C-4B7C-A16F-3C43499EB1E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E24FF37E-656C-4B7C-A16F-3C43499EB1E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E24FF37E-656C-4B7C-A16F-3C43499EB1E2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
