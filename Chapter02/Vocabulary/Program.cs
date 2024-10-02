@@ -1,4 +1,8 @@
 ﻿using System.Reflection; // To use Assembly, TypeName, and so on.
+// Declare some unused variables using types in
+// additional assemblies to make them load too
+System.Data.DataSet ds = new();
+HttpClient client = new();
 
 // See https://aka.ms/new-console-template for more information
 // #error version
