@@ -1,4 +1,6 @@
-﻿object height = 1.88; // Storing a double in an object.
+﻿using System.Xml; // To use XmlDOcument
+
+object height = 1.88; // Storing a double in an object.
 object name = "Steve"; // Storing a string in an object.
 Console.WriteLine($"{name} is {height} meters tall.");
 // int length1 = name.Length; // This gives a compile error 
@@ -30,3 +32,15 @@ var price = 4.99M; // in pounds sterling
 var fruit = "Apples"; // string values use double-quote 
 var letter = 'z'; // char values use single-quotes 
 var happy = true; // Booleans can only be true or false.
+
+Console.WriteLine();
+
+// Good use of var because it avoids the repeated type as shown in the more verbose
+// second statement.
+var xml1 = new XmlDocument(); // Works with C# 3 and later.
+XmlDocument xml2 = new XmlDocument(); // Works with all C# versions.
+
+// Bad use of var because we cannot tell the type, so we should use a specific type
+// declaration as shown in the second statement.
+var file1 = File.CreateText("something1.txt");
+StreamWriter file2 = File.CreateText("something2.txt");

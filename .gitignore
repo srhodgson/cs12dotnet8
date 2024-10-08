@@ -482,3 +482,5 @@ $RECYCLE.BIN/
 
 # Vim temporary swap files
 *.swp
+Chapter02/Variables/something1.txt
+Chapter02/Variables/something2.txt
