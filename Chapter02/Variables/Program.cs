@@ -21,3 +21,12 @@ something = new[] { 3, 5, 7 };
 Console.WriteLine($"The length of something is {something.Length}");
 // Output the type of the something variable.
 Console.WriteLine($"something is a {something.GetType()}");
+
+Console.WriteLine();
+
+var population = 67_000_000; // 67 million in UK
+var weight = 1.88; // in kilograms
+var price = 4.99M; // in pounds sterling 
+var fruit = "Apples"; // string values use double-quote 
+var letter = 'z'; // char values use single-quotes 
+var happy = true; // Booleans can only be true or false.
