@@ -44,3 +44,16 @@ XmlDocument xml2 = new XmlDocument(); // Works with all C# versions.
 // declaration as shown in the second statement.
 var file1 = File.CreateText("something1.txt");
 StreamWriter file2 = File.CreateText("something2.txt");
+
+XmlDocument xml3 = new(); // Target-typed new in c# 9 or later 
+
+Console.WriteLine();
+
+Console.WriteLine($"default(int) = {default(int)}");
+Console.WriteLine($"default(bool) = {default(bool)}");
+Console.WriteLine($"default(DateTime) = {default(DateTime)}");
+Console.WriteLine($"default(string) = {default(string)}");
+int number = 13;
+Console.WriteLine($"number set to: {number}");
+number = default;
+Console.WriteLine($"number reset to its default: {number}");
