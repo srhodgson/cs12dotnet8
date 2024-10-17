@@ -53,7 +53,7 @@ WriteLine($"x << 3     | {x << 3,7}   | {x << 3,7:B8}");
 // Multiply x by 8
 WriteLine($"x * 8      | {x * 8,7}   | {x * 8,7:B8}");
 // Right-shift y by one bit column
-WriteLine($"y >> 1    | {y >> 1,7}    |  {y >> 1,7:B8}");
+WriteLine($"y >> 1     | {y >> 1,7}   | {y >> 1,7:B8}");
 
 
 
