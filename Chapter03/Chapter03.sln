@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IterationStatements", "Iter
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Arrays", "Arrays\Arrays.csproj", "{340AE15B-44D6-4838-A8DD-E3E941A1A9DE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CastingConverting", "CastingConverting\CastingConverting.csproj", "{203555F8-3B29-4F80-95DB-62A06FDFC091}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,5 +38,9 @@ Global
 		{340AE15B-44D6-4838-A8DD-E3E941A1A9DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{340AE15B-44D6-4838-A8DD-E3E941A1A9DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{340AE15B-44D6-4838-A8DD-E3E941A1A9DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{203555F8-3B29-4F80-95DB-62A06FDFC091}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{203555F8-3B29-4F80-95DB-62A06FDFC091}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{203555F8-3B29-4F80-95DB-62A06FDFC091}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{203555F8-3B29-4F80-95DB-62A06FDFC091}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
