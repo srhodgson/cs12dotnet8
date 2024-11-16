@@ -51,3 +51,21 @@ for (int x = 0; x < 8; x++)
     WriteLine(" |");
 }
 WriteLine();
+
+foreach (double n in doubles)
+{
+    WriteLine(format: "Math.Round({0}, 0, MidPointRounding.AwayFromZero) is {1}",
+    arg0: n,
+    arg1: Math.Round(value: n, digits: 0, mode: MidpointRounding.AwayFromZero));
+}
+
+WriteLine();
+
+int number = 12;
+WriteLine(number.ToString());
+bool boolean= true;
+WriteLine(boolean.ToString());
+DateTime now = DateTime.Now;
+WriteLine(now.ToString());
+object me = new();
+WriteLine(me.ToString());
