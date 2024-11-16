@@ -1,4 +1,5 @@
 ﻿using static System.Convert; // To use the ToInt32 method
+using System.Globalization; // To use CultureInfo.
 
 int a = 10;
 double b = a; // An int can be safely cast into a double.
@@ -85,3 +86,13 @@ WriteLine();
 // Convert the array to Base64 string and output as text.
 string encoded = ToBase64String(binaryObject);
 WriteLine($"Binary Object as Base64: {encoded}");
+
+WriteLine();
+
+// Set the current culture to make sure date parsing works.
+CultureInfo.CurrentCulture = CultureInfo.GetCultureInfo("en-US");
+int friends = int.Parse("27");
+DateTime birthday = DateTime.Parse("4 June 1980");
+WriteLine($"I have {friends} friend to invite to my party.");
+WriteLine($"My birthday is {birthday}.");
+WriteLine($"My birthday is {birthday:D}.");
