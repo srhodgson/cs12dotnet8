@@ -1,11 +1,19 @@
 {
     "configurations": [
+        
         {
             "name": "C#: TopLevelFunctions",
             "type": "dotnet",
             "request": "launch",
             "projectPath": "${workspaceFolder}/TopLevelFunctions/TopLevelFunctions.csproj",
             "launchConfigurationId": "TargetFramework=;TopLevelFunctions"
+        },
+        {
+            "name": "Debugging",
+            "type": "dotnet",
+            "request": "launch",
+            "projectPath": "${workspaceFolder}/Debugging/Debugging.csproj",
+            "launchConfigurationId": "TargetFramework=;Debugging"
         }
     ]
 }
