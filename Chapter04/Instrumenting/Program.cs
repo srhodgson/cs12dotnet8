@@ -31,6 +31,19 @@ IConfigurationRoot configuration = builder.Build();
 TraceSwitch ts = new(
     displayName: "PacktSwitch",
     description: "This switch is set via a JSON config");
+configuration.GetSection("PacktSwitch").Bind(ts);
+Console.WriteLine($"Trace switch value: {ts.Value}");
+Console.WriteLine($"Trace switch level: {ts.Level}");
+Trace.WriteLineIf(ts.TraceError, "Trace error");
+Trace.WriteLineIf(ts.TraceWarning, "Trace warning");
+Trace.WriteLineIf(ts.TraceInfo, "Trace information");
+Trace.WriteLineIf(ts.TraceVerbose, "Trace verbose");
+
+int unitsInStock = 12;
+LogSourceDetails(unitsInStock > 10);
+
 // Close the text file (also flushes) and release resources.
 Debug.Close();
 Trace.Close();
+Console.WriteLine("Press enter to exit.");
+Console.ReadLine();
