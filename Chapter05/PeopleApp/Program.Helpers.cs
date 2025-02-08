@@ -15,7 +15,7 @@ partial class Program
 
         if (showCulture)
         {
-            WriteLine($"Current culture");
+            WriteLine($"Current culture: {CultureInfo.CurrentCulture.DisplayName}.");
         }
     }
 }
