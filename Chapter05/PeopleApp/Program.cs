@@ -104,3 +104,9 @@ WriteLine(format:
     arg0: gunny.Name,
     arg1: gunny.HomePlanet,
     arg2: gunny.Instantiated);
+
+bob.WriteToConsole();
+WriteLine(bob.GetOrigin());
+
+WriteLine(bob.SayHello());
+WriteLine(bob.SayHelloTo("Emily"));
