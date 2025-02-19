@@ -49,19 +49,31 @@ public class Person : object
         return $"{Name} says 'Hello!'.";
     }
 
-    public string SayHelloTo(string name)
+    public string SayHello(string name)
     {
         return $"{Name} says 'Hello, '{Name}!'";
     }
 
-    public string OptionalParameters(string command = "Run!", double number = 0.0,
-        bool active = false)
+    public string OptionalParameters(int count, string command = "Run!", double number = 0.0,
+        bool active = true)
     {
         return string.Format(
             format: "command is {0}, number is {1}, active is {2}",
             arg0: command,
             arg1: number,
             arg2: active);
+    }
+
+    public void PassingParameters(int w, int x, ref int y, out int z)
+    {
+        // out parameters cannot have a default and they must be initialised inside the method.
+        z = 100;
+        // Increment each parameter except the read-only x.
+        w++;
+        // x++; // Give a compiler error!
+        y++;
+        z++;
+        WriteLine($"In the method: w={w}, x={x}, y={y}, z={z}");
     }
     #endregion
 }
