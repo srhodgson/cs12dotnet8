@@ -1,5 +1,7 @@
 ﻿using System.Reflection.Metadata;
 using Packt.Shared; // To use Person
+using Fruit = (string Name, int Number); // Aliasing a tuple type
+
 ConfigureConsole(useComputerCulture: true); // Sets current culture to US English.
 // Alternatives:
 // ConfigureConsole(useComputerCulture: true); // Use your own culture
@@ -136,3 +138,21 @@ WriteLine();
 
 (string, int)fruit = bob.GetFruit();
 WriteLine($"{fruit.Item1}, {fruit.Item2} there are.");
+
+WriteLine();
+
+// Without an aliased tuple type
+// var fruitNamed = bob.GetNamedFruit();
+// With an aliased tuple type
+Fruit fruitNamed = bob.GetNamedFruit();
+WriteLine($"There are {fruitNamed.Number} {fruitNamed.Name}");
+
+WriteLine();
+
+var thing1 = ("Neville", 4);
+WriteLine($"{thing1.Item1} has {thing1.Item2} children.");
+var thing2 = (bob.Name, bob.Children.Count);
+WriteLine($"{thing2.Name} has {thing2.Count} children");
+
+WriteLine();
+
