@@ -123,3 +123,16 @@ int d = 40;
 WriteLine($"Before: a={a}, b={b}, c={c}, d={d}");
 bob.PassingParameters(a, b, ref c, out d);
 WriteLine($"After: a={a}, b={b}, c={c}, d={d}");
+
+int e = 50;
+int f = 60;
+int g = 70;
+WriteLine($"Before: e={e}, f={f}, g={g}, h doesn't exist yet!");
+// Simplified C#7 or later syntax fopr the out parameter 
+bob.PassingParameters(e, f, ref g, out int h);
+WriteLine($"After: e={e}, f={f}, g={g}, h={h}");
+
+WriteLine();
+
+(string, int)fruit = bob.GetFruit();
+WriteLine($"{fruit.Item1}, {fruit.Item2} there are.");
