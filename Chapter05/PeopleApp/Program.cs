@@ -190,3 +190,21 @@ WriteLine(sam.Origin);
 WriteLine(sam.Greeting);
 WriteLine(sam.Age);
 
+WriteLine();
+
+sam.FavoriteIceCream = "Chocolate Fudge";
+WriteLine($"Sam's favorite ice-cream is {sam.FavoriteIceCream}");
+string color = "Red";
+try
+{
+    sam.FavoritePrimaryColor = color;
+    WriteLine($"Sam's favorite primary color is {sam.FavoritePrimaryColor}");
+}
+catch (Exception ex)
+{
+    WriteLine("Tried to set {0} to '{1}' : {2}",
+        nameof(sam.FavoritePrimaryColor), color, ex.Message);
+}
+
+bob.FavoriteAncientWonder = WondersOfTheAncientWorld.ColossusOfRhodes;
+

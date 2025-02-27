@@ -6,7 +6,8 @@ public partial class Person : object
     #region Fields: Data or state for this person
     public string? Name; // ? means it can be null
     public DateTimeOffset Born;
-    public WondersOfTheAncientWorld FavoriteAncientWonder;
+    // This has been moved to PersonAutoGen.cs as a property
+    // public WondersOfTheAncientWorld FavoriteAncientWonder;
     public WondersOfTheAncientWorld BucketList;
     public List<Person> Children = new();
     // Constant fields: Values that are fixed at compilation
