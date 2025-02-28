@@ -16,13 +16,13 @@ public partial class Person
     // lambda expression body syntax
     public string Greeting => $"{Name} says 'Hello!'";
     public int Age => DateTime.Today.Year - Born.Year;
-    
+
     // A read-write property defined using C# 3 auto-syntax
     public string? FavoriteIceCream { get; set; }
-    
+
     // A private backing field to store the property value 
     private string? _favoritePrimaryColor;
-    
+
     // A public property to read and write to the field 
     public string? FavoritePrimaryColor
     {
@@ -68,6 +68,27 @@ public partial class Person
             _favoriteAncientWonder = value;
         }
     }
+    #endregion
 
+    #region Indexers: Properties that use array syntax to access them.
+    public Person this[int index]
+    {
+        get
+        {
+            return Children[index]; // Pass on to the List<T> indexer.
+        }
+        set
+        {
+            Children[index] = value;
+        }
+    }
+
+    public Person this[string name]
+    {
+        get
+        {
+            return Children.Find(p => p.Name == name);
+        }
+    }
     #endregion
 }
