@@ -298,3 +298,12 @@ WriteLine($"ac1 == ac2: {ac1 == ac2}");
 Animalrecord ar1 = new() { Name = "Rex" };
 Animalrecord ar2 = new() { Name = "Rex" };
 WriteLine($"ar1 == ar2: {ar1 == ar2}");
+
+WriteLine();
+
+Headset vp = new("Apple", "Vision Pro");
+WriteLine($"{vp.ProductName} is made by {vp.Manufacturer}");
+Headset holo = new();
+WriteLine($"{holo.ProductName} is made by {holo.Manufacturer}");
+Headset mq = new() { Manufacturer = "Meta", ProductName = "Quest 3" };
+WriteLine($"{mq.ProductName} is made by {mq.Manufacturer}");
