@@ -1,4 +1,5 @@
-﻿using System.Reflection.Metadata;
+﻿using System.Net.Http.Headers;
+using System.Reflection.Metadata;
 using Packt.Shared; // To use Person
 using Fruit = (string Name, int Number); // Aliasing a tuple type
 
@@ -288,3 +289,12 @@ ImmutableVehicle car = new()
 ImmutableVehicle repaintedCar = car with { Color = "Polymetal Grey Metallic" };
 WriteLine($"Original car color was {car.Color}");
 WriteLine($"New car color is {repaintedCar.Color}");
+
+WriteLine();
+
+AnimalClass ac1 = new() { Name = "Rex" };
+AnimalClass ac2 = new() { Name = "Rex" };
+WriteLine($"ac1 == ac2: {ac1 == ac2}");
+Animalrecord ar1 = new() { Name = "Rex" };
+Animalrecord ar2 = new() { Name = "Rex" };
+WriteLine($"ar1 == ar2: {ar1 == ar2}");
